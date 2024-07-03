@@ -38,3 +38,32 @@ animal_counter()'''#task 3
             primes.append(num)  
     return primes  
 print(filter_prime(['type a list of numbers here']))'''#task 4
+
+
+'''def permute(prefix,remaining):
+    if len(remaining) == 0:
+        print(prefix)
+    else:
+        for i in range(len(remaining)):
+            new_prefix = prefix + remaining[i]
+            new_remaining = remaining[:i] + remaining[i+1:]
+            permute(new_prefix, new_remaining)
+def print_permutations(string):
+    permute("", string)
+print_permutations("type a string")'''#task 5
+
+
+'''def reverse_sentence(sentence):
+    words = sentence.split()
+    reversed_words = words[::-1]
+    return ' '.join(reversed_words)
+print(reverse_sentence("We are ready"))'''#task 6
+
+
+'''def has_33(nums):
+    for i in range(len(nums)-1):
+        if nums[i] == 3 and nums[i+1] == 3:
+            return True
+    return False
+print(has_33([1,2,3,3]))
+print(has_33([1,2,3,4]))'''#task 7
